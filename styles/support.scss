@@ -1,0 +1,39 @@
+.support {
+  padding-top: 100px;
+  padding-bottom: 164px;
+
+  .title-l {
+    color: #FFFFFF;
+  }
+
+  .link {
+    color: #FFFFFF;
+    margin-top: 10px;
+
+
+    &:after {
+      opacity: 0.4;
+      background-color: #FFFFFF;
+    }
+  }
+
+  .support-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    &-item {
+      width: 23%;
+      max-height: 170px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #FFFFFF;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+}

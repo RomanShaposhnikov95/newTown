@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,h1,h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+$blueDark: #0E1626;
+$blueLight: #264692;
+$blue: #131E33;
+$grey: #E8E8EF;
+$greyDark: #666F80;
+$white: #FFFFFF;
+$green: #60B358;
+
+
+.container, .swiper-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.title-xxl {
+
+}
+
+.title-xl {
+
+}
+
+
+.title-l {
+  color: #131E33;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 90px;
+}
+
+
+.title-m {
+  color: #131E33;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 33px;
+}
+
+.title-s {
+  color: #131E33;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.title-xs {
+
+}
+
+
+.descr-xxl, .descr-xl, .descr-l, .descr-m, .descr-s, .descr-xs {
+  color: $greyDark;
+  letter-spacing: -0.4px;
+}
+
+
+.descr-xxl {
+
+}
+
+.descr-xl {
+
+}
+
+.descr-l {
+
+}
+
+.descr-m {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.descr-s {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.descr-xs {
+
+}
+
+
+
+.link {
+  color: $green;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  position: relative;
+  display: inline-flex;
+  padding-bottom: 9px;
+
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $green;
+  }
+}
+
+
+
+.line-white, .line-blue, .line-darkblue, .line-grey {
+  position: relative;
+  padding-top: 80px;
+
+  &:after {
+    position: absolute;
+    top: -44px;
+    left: 0;
+    height: 44px;
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+.line-white {
+  background-color: $white;
+  &:after {
+    content: url("../assets/line/ic-creative-line-1.svg");
+  }
+}
+
+.line-grey {
+  background-color: $grey;
+  &:after {
+    content: url("../assets/line/ic-creative-line-2.svg");
+  }
+}
+
+.line-blue {
+  background-color: $blueLight;
+  &:after {
+    content: url("../assets/line/ic-creative-line-3.svg");
+  }
+}
+
+.line-darkblue {
+  background-color: $blueDark;
+  &:after {
+    content: url("../assets/line/ic-creative-line-4.svg");
+  }
+}
+
+
+

@@ -1,0 +1,66 @@
+.banner {
+  width: 100%;
+  min-height: 727px;
+  background-image: url("../assets/banner/image-hero@2x.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  padding-top: 140px;
+
+  &-title, &-descr  {
+    max-width: 642px;
+  }
+
+  &-title {
+    color: $white;
+    font-size: 81px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 90px;
+  }
+
+  &-descr {
+    margin-top: 19px;
+    color: #B8BECC;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 28px;
+  }
+
+  .link-group {
+    margin-top: 144px;
+    display: flex;
+
+
+    &-item {
+      width: 33.3333333%;
+      padding: 40px;
+      min-height: 188px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      p {
+        color: $white;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: -0.4px;
+        line-height: 30px;
+      }
+    }
+
+    .bg-lightBlue {
+      background-color: $blueLight;
+    }
+
+    .bg-green {
+      background-color: $green;
+    }
+
+    .bg-darkBlue {
+      background-color: $blue;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.about {
+  padding-top: 80px;
+
+  .descr-m {
+    margin-top: 10px;
+
+    //&:last-child {
+    //  //margin-bottom: 14px;
+    //  background-color: #60B358;
+    //}
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 14px;
+  }
+
+  .info-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 79px;
+    &-item {
+      width: 31.6%;
+      border: 1px solid #D0D0DB;
+      padding: 40px;
+      min-height: 396px;
+
+
+      .title-s {
+        margin-top: 30px;
+      }
+
+      .descr-s {
+        margin-top: 10px;
+      }
+    }
+  }
+}
