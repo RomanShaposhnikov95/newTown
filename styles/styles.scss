@@ -37,7 +37,7 @@ ul, li {
 $blueDark: #0E1626;
 $blueLight: #264692;
 $blue: #131E33;
-$grey: #E8E8EF;
+$grey: #E3E9EF;
 $greyDark: #666F80;
 $white: #FFFFFF;
 $green: #60B358;
@@ -68,6 +68,14 @@ $green: #60B358;
   line-height: 90px;
 }
 
+
+.title-l-w {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 90px;
+}
 
 .title-m {
   color: #131E33;
@@ -113,14 +121,35 @@ $green: #60B358;
   line-height: 26px;
 }
 
+
+.descr-m-w {
+  opacity: 0.7;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  line-height: 26px;
+}
+
 .descr-s {
   font-size: 14px;
+  line-height: 22px;
+}
+
+.descr-s-w {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
   line-height: 22px;
 }
 
 .descr-xs {
 
 }
+
+
+
 
 
 

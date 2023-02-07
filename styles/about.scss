@@ -1,7 +1,7 @@
 .about {
   padding-top: 80px;
 
-  .descr-m {
+  .descr-m-w {
     margin-top: 10px;
 
     //&:last-child {
@@ -24,6 +24,7 @@
       border: 1px solid #D0D0DB;
       padding: 40px;
       min-height: 396px;
+      background-color: $grey;
 
 
       .title-s {
