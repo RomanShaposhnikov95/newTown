@@ -34,57 +34,36 @@
       text-transform: uppercase;
     }
 
-    ul {
-      margin-left: 17px;
-      li {
-        //list-style-type: circle;
 
-
-        //ol {
-        //  list-style: none;
-        //  counter-reset: item;
-        //  li {
-        //    counter-increment: item;
-        //    margin-bottom: 5px;
-        //
-        //    &:before {
-        //      margin-right: 10px;
-        //      content: counter(item);
-        //      border-radius: 50%;
-        //      color: #264692;
-        //      font-weight: bold;
-        //      font-size: 16px;
-        //      letter-spacing: -0.2px;
-        //      line-height: 28px;
-        //    }
-        //  }
-        //
-        //}
-
+      ol {
+        padding-left: 20px;
 
         ol {
-          list-style: none;
-          counter-reset: item;
-          li {
-            counter-increment: item;
-            margin-bottom: 5px;
+          padding-left: 0;
+        }
+      }
 
-            &:before {
-              margin-right: 10px;
-              content: counter(item);
-              border-radius: 50%;
-              color: #264692;
-              font-weight: bold;
-              font-size: 16px;
-              letter-spacing: -0.2px;
-              line-height: 28px;
-            }
-          }
+        ol > li {
+          counter-increment: item;
+          padding-left: 15px;
+        }
+
+        ol > li:first-child {
+          counter-reset: item;
+        }
+
+        ol ol > li {
+          display: block;
+        }
+
+        ol ol > li:before {
+          content: counters(item, ".") ". ";
+          padding-right: 15px;
 
         }
 
-      }
-    }
+
+
 
   }
 }

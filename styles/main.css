@@ -27,7 +27,7 @@ ul {
   list-style-type: none;
 }
 
-ul, li {
+ol, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -615,26 +615,25 @@ header {
   text-decoration: underline;
   text-transform: uppercase;
 }
-.details-wrap ul {
-  margin-left: 17px;
+.details-wrap ol {
+  padding-left: 20px;
 }
-.details-wrap ul li ol {
-  list-style: none;
+.details-wrap ol ol {
+  padding-left: 0;
+}
+.details-wrap ol > li {
+  counter-increment: item;
+  padding-left: 15px;
+}
+.details-wrap ol > li:first-child {
   counter-reset: item;
 }
-.details-wrap ul li ol li {
-  counter-increment: item;
-  margin-bottom: 5px;
+.details-wrap ol ol > li {
+  display: block;
 }
-.details-wrap ul li ol li:before {
-  margin-right: 10px;
-  content: counter(item);
-  border-radius: 50%;
-  color: #264692;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: -0.2px;
-  line-height: 28px;
+.details-wrap ol ol > li:before {
+  content: counters(item, ".") ". ";
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
