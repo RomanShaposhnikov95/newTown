@@ -1,0 +1,45 @@
+.pagination-nav {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .pagination {
+
+    .page-link {
+      padding: 0;
+      height: 40px;
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #131E33;
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 40px;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+    }
+    .active {
+      .page-link {
+        color: #264692;
+      }
+    }
+
+    .arrow {
+      margin: 0 30px;
+    }
+
+    .disabled {
+      cursor: no-drop;
+
+      a {
+        #News {
+          fill: #7A8299;
+        }
+      }
+    }
+  }
+}
+

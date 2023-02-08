@@ -9,21 +9,6 @@
 
     margin-top: 40px;
 
-    .descr {
-      color: #131E33;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: -0.2px;
-      line-height: 28px;
-      margin-top: 14px;
-
-
-      a {
-        color: #60B358;
-        text-decoration: underline;
-      }
-    }
-
     .subtitle {
       color: #131E33;
       font-size: 16px;
@@ -34,36 +19,110 @@
       text-transform: uppercase;
     }
 
-
-      ol {
+      ol, ul {
         padding-left: 20px;
+
+        li {
+          counter-increment: item;
+          padding-left: 10px;
+          margin-top: 14px;
+
+
+          &:first-child {
+            counter-reset: item;
+          }
+
+          &::marker {
+            color: #264692;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: -0.2px;
+            line-height: 28px;
+          }
+        }
 
         ol {
           padding-left: 0;
+
+          li {
+            display: block;
+
+            &:before {
+              content: counters(item, ".") ".";
+              padding-right: 15px;
+              color: #264692;
+              font-size: 16px;
+              font-weight: bold;
+              letter-spacing: -0.2px;
+              line-height: 28px;
+            }
+          }
         }
       }
 
-        ol > li {
-          counter-increment: item;
-          padding-left: 15px;
+      ul {
+        li {
+          list-style-type: disc;
         }
 
-        ol > li:first-child {
-          counter-reset: item;
+        ul {
+          li {
+            list-style-type: circle;
+          }
         }
+      }
 
-        ol ol > li {
-          display: block;
+      &:first-child {
+        margin-top: 0;
+      }
+  }
+
+  &-halves {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 1px solid #E3E9EF;
+    border-bottom: 1px solid #E3E9EF;
+    padding: 0 0 50px 0;
+
+
+    &-item {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: calc(50% - 30px);
+      }
+
+      &-content {
+        width: calc(50% - 30px);
+
+        a {
+          margin-top: 20px;
+          text-decoration: underline;
+
+          &:after {
+            content: none;
+          }
         }
+      }
 
-        ol ol > li:before {
-          content: counters(item, ".") ". ";
-          padding-right: 15px;
-
-        }
-
-
-
+    }
 
   }
+
+
+  &-gallery {
+    margin-top: 58px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11px;
+    row-gap: 11px;
+
+    img {
+      width: calc(33.3333% - 8px);
+    }
+  }
 }
+
+

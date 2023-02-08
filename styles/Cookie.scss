@@ -1,32 +1,58 @@
 .cookie {
-  background-color: #264692;
+  background-color: rgba(14,22,38,0.9);
   position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  max-width: 450px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 11;
-  display: none;
+  padding: 40px;
 
 
   &-content {
-    padding: 40px;
-    width: 100%;
-    height: 100%;
-    background-color: #60B358;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-data {
+      display: flex;
+      align-items: center;
 
+      svg {
+        margin-right: 20px;
+      }
 
-    &:after {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      bottom: 0;
-      height: 44px;
-      z-index: 1;
-      width: 100%;
-      transform: rotate(-90deg);
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          color: #FFFFFF;
+          font-size: 17px;
+          font-weight: 500;
+          letter-spacing: -0.4px;
+          line-height: 26px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &-btns {
+      display: flex;
+      column-gap: 10px;
+
+      button {
+        padding: 15px 25px;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        line-height: 26px;
+        background-color: #60B358;
+        border: none;
+
+        &:first-child {
+          background-color: transparent;
+        }
+      }
     }
   }
 }
