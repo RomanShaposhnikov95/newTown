@@ -1,5 +1,5 @@
 .map {
-
+  position: relative;
   .title-l {
     margin-bottom: 40px;
   }
@@ -7,7 +7,92 @@
   &-wrap {
     margin-bottom: 124px;
     height: 628px;
-    width: 1170px;
-    background-color: #666F80;
+    //width: 1170px;
+    width: 100%;
+    background-color: #D4DDE5;
+
+    #map {
+      width: 100%;
+      height: 100%;
+
+      .leaflet-bar {
+        position: absolute;
+        right: 0 !important;
+        bottom: 0;
+      }
+
+      .leaflet-left {
+        right: 30px !important;
+      }
+      .leaflet-top {
+        bottom: 30px;
+      }
+    }
+
+  }
+
+  &-modal {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 345px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px rgba(64,85,128,0.1), 0 4px 8px 0 rgba(64,85,128,0.2);
+
+    &-content {
+      width: 100%;
+      position: relative;
+      img {
+        width: 100%;
+      }
+
+      &-data {
+        padding: 18px 24px 24px 24px;
+
+        .title-s {
+          line-height: 26px;
+          margin-bottom: 4px;
+        }
+
+        .descr-s {
+          font-weight: 500;
+          line-height: 20px;
+        }
+
+        &-worktime {
+          margin-top: 14px;
+
+          .time {
+            margin-top: 4px;
+            color: #0E1626;
+            font-size: 14px;
+            letter-spacing: -0.4px;
+            line-height: 20px;
+            span {
+              font-weight: bold;
+            }
+
+          }
+        }
+      }
+
+      &-close {
+        height: 30px;
+        width: 30px;
+        background-color: #131E33;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+
+    }
   }
 }
+
+
+

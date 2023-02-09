@@ -50,3 +50,19 @@
     border-radius: 50%;
   }
 
+
+  @media (max-width: 700px) {
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 270px;
+        }
+      }
+    }
+
+
+    [class*=swiper-button] {
+      height: 40px;
+      width: 40px;
+    }
+  }

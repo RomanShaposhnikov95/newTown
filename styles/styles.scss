@@ -224,30 +224,45 @@ $green: #60B358;
 .line-white {
   background-color: $white;
   &:after {
-    content: url("../assets/line/ic-creative-line-1.svg");
+    content: "";
+    background-image: url("../assets/line/ic-creative-line-1.svg");
   }
 }
 
 .line-grey {
   background-color: $grey;
   &:after {
-    content: url("../assets/line/ic-creative-line-2.svg");
+    content: "";
+    background-image: url("../assets/line/ic-creative-line-2.svg");
   }
 }
 
 .line-blue {
   background-color: $blueLight;
   &:after {
-    content: url("../assets/line/ic-creative-line-3.svg");
+    content: "";
+    background-image: url("../assets/line/ic-creative-line-3.svg");
   }
 }
 
 .line-darkblue {
   background-color: $blueDark;
   &:after {
-    content: url("../assets/line/ic-creative-line-4.svg");
+    content: "";
+    background-image: url("../assets/line/ic-creative-line-4.svg");
   }
 }
 
+
+
+
+
+@media (max-width: 575px) {
+  .title-l {
+    font-size: 30px;
+    letter-spacing: -0.63px;
+    line-height: 40px;
+  }
+}
 
 

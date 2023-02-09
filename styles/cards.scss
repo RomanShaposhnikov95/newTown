@@ -3,6 +3,9 @@
   .tabs {
     display: flex;
     margin-bottom: 50px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 
     &-item {
       color: #264692;
@@ -13,7 +16,6 @@
       padding: 9px 16px;
       border: 1px solid #264692;
       background-color: transparent;
-      margin-right: 10px;
     }
 
     .active {
@@ -85,6 +87,64 @@
           content: "";
           opacity: 0.4;
         }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  .cards {
+    padding: 30px 0 124px 0;
+
+    .tabs {
+      width: 100%;
+      &-item {
+        width: calc(50% - 5px);
+      }
+    }
+
+    &-content {
+      &-item {
+        width: calc(33.3333% - 20px);
+      }
+    }
+  }
+
+  .cards-l  {
+    .cards-content {
+      &-item {
+        width: calc(50% - 15px);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .cards {
+    &-content {
+      &-item {
+        width: calc(50% - 15px);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 475px) {
+  .cards-l, .cards  {
+
+    .tabs {
+      &-item {
+        width: 100%;
+      }
+    }
+
+    .cards-content {
+      &-item {
+        width: 100%;
       }
     }
   }

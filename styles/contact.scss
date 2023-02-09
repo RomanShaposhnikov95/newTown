@@ -97,3 +97,39 @@
     }
   }
 }
+
+
+
+@media (max-width: 968px) {
+  .contact {
+    padding-bottom: 124px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-person {
+      width: 100%;
+    }
+
+    &-data {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 968px) {
+  .contact {
+    &-person {
+      flex-direction: column;
+
+      &-item {
+        width: 100%;
+      }
+    }
+
+  }
+}

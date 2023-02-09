@@ -56,3 +56,32 @@
     }
   }
 }
+
+
+@media (max-width: 700px) {
+  .cookie {
+    &-content {
+      flex-direction: column;
+
+      &-btns {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .cookie {
+    &-content {
+
+      &-data {
+        flex-direction: column;
+        align-items: flex-start;
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
