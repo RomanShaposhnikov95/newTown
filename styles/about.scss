@@ -6,8 +6,15 @@
   }
 
   a {
-    display: inline-block;
     margin-top: 14px;
+
+    &:hover {
+      color: #60B358;
+
+      &:after {
+        background: #60B358;
+      }
+    }
   }
 
   .info-group {
@@ -28,6 +35,13 @@
 
       .descr-s {
         margin-top: 10px;
+      }
+
+      &:hover {
+        background-color: #F6F8FB;
+        position: relative;
+        top: -20px;
+        margin-bottom: -20px;
       }
     }
   }

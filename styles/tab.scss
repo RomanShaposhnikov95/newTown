@@ -20,8 +20,12 @@
       line-height: 22px;
       background-color: #1F3771;
       border: none;
-      border-top: 1px solid #666F80;
+      border-top: 1px solid #284882;
       text-align: start;
+
+      &:hover {
+        background-color: #334A80;
+      }
     }
 
     .active {

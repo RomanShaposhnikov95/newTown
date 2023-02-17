@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>3BA1730F-E651-45F0-9CDA-46E2E8C76516</title>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>94CB4611-7B0B-49A5-A3BD-8FA48CE85837</title>
     <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="WYSIWYG-_-Mobile" transform="translate(-335.000000, -5323.000000)" stroke="#264692" stroke-width="1.7">
-            <g id="Page-bottom" transform="translate(-0.000000, 4654.000000)">
-                <g id="Footer" transform="translate(0.000000, 468.000000)">
-                    <g id="Content" transform="translate(30.000000, 84.000000)">
-                        <g id="Col-1" transform="translate(0.000000, 110.000000)">
-                            <g id="Icon" transform="translate(302.000000, 7.000000)">
-                                <polyline id="Path-3" transform="translate(6.000000, 3.000000) scale(1, -1) translate(-6.000000, -3.000000) " points="0 0 6 6 12 0"></polyline>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+        <g id="Other-hovers" transform="translate(-549.000000, -1711.000000)" stroke="#264692" stroke-width="1.7">
+            <g id="Icon" transform="translate(549.000000, 1711.000000)">
+                <polyline id="Path-3" transform="translate(7.000000, 5.000000) scale(1, -1) translate(-7.000000, -5.000000) " points="1 2 7 8 13 2"></polyline>
             </g>
         </g>
     </g>

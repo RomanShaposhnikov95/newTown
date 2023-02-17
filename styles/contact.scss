@@ -41,6 +41,22 @@
         font-weight: 500;
         letter-spacing: -0.4px;
         line-height: 22px;
+        display: inline-flex;
+        align-items: center;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        &:hover {
+          color: #264692;
+
+          svg {
+            #Other-hovers {
+              fill:#264692;
+            }
+          }
+        }
       }
 
       &-num {
@@ -49,6 +65,16 @@
 
       &-mail {
         margin-top: 8px;
+      }
+
+      .not-indicated {
+        color: #939AA6;
+        pointer-events: none;
+        svg {
+          #Other-hovers {
+            fill: #939AA6;
+          }
+        }
       }
     }
   }

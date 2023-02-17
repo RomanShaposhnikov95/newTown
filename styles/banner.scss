@@ -49,6 +49,18 @@
         letter-spacing: -0.4px;
         line-height: 30px;
       }
+
+      &:hover {
+        span {
+          position: relative;
+          svg {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -10px;
+          }
+        }
+      }
     }
 
     .bg-lightBlue {
