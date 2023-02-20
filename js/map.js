@@ -51,8 +51,6 @@ const modal = `
 `
 
 map.eachLayer(function (layer) {
-    console.log(layer._icon)
-
     layer.bindPopup(modal)
 });
 
