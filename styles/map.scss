@@ -137,3 +137,13 @@
 .leaflet-tile-pane {
   filter: grayscale(85%);
 }
+
+
+@media (max-width: 575px) {
+  .map {
+
+    &-wrap {
+      height: 350px;
+    }
+  }
+}

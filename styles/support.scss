@@ -15,10 +15,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    column-gap: 11px;
+    column-gap: 30px;
     row-gap: 11px;
     &-item {
-      width: calc(25% - 9px);
+      position: relative;
+      width: calc(25% - 23px);
       max-height: 170px;
       padding: 20px;
       display: flex;
@@ -26,6 +27,8 @@
       justify-content: center;
       background-color: #FFFFFF;
       cursor: pointer;
+      transition: all 0.3s;
+      top: 0;
 
       img {
         max-width: 100%;
