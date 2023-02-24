@@ -18,13 +18,18 @@
 
 
     wrapper.forEach((el, index) => {
+
+        const imgWrap = document.createElement("div")
+        imgWrap.classList.add("imgWrap")
+
         const wrap = document.createElement("img")
         wrap.src = el.firstElementChild.src
         wrap.addEventListener('click', (e) => {
             imgClick(e, index)
         })
 
-        slides.appendChild(wrap)
+        imgWrap.appendChild(wrap)
+        slides.appendChild(imgWrap)
 
         function imgClick(e, index) {
             current.src = e.target.src;

@@ -17,7 +17,7 @@ let blueIcon = L.icon({
 
 
 let map = L.map('map').setView([coord1, coord2], 7);
-
+//
 // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 //     maxZoom: 20,
 // }).addTo(map);
@@ -34,10 +34,10 @@ let map = L.map('map').setView([coord1, coord2], 7);
 //         minZoom: 7,
 //     }).addTo(map);
 
+
 L.tileLayer(
-    'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        minZoom: 7,
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18
     }).addTo(map);
 
 
@@ -53,7 +53,7 @@ let marker2 = L.marker([56.1700878, 22.8018172], {icon: greenIcon}).addTo(map);
 
 const modal = `
  <div class="map-modal-content">
-<!--    <img src="assets/img/slides/1.png" alt="">-->
+    <img src="assets/img/slides/rimi.jpg" alt="">
 
     <div class="map-modal-content-data">
         <h5 class="title-s">RIMI veikalā</h5>
@@ -80,6 +80,21 @@ map.eachLayer(function (layer) {
     });
 
 });
+
+const tile = document.querySelector(".leaflet-tile-pane")
+//
+// const overlay1 = document.createElement("div")
+// overlay1.classList.add("ov")
+// overlay1.classList.add("ove1")
+//
+// const overlay2 = document.createElement("div")
+// overlay2.classList.add("ov")
+// overlay2.classList.add("ove2")
+//
+//
+// tile.appendChild(overlay1)
+// tile.appendChild(overlay2)
+
 
 
 

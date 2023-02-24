@@ -1,5 +1,4 @@
 .map {
-  position: relative;
   .title-l {
     margin-bottom: 40px;
   }
@@ -10,10 +9,12 @@
     //width: 1170px;
     width: 100%;
     background-color: #D4DDE5;
+    position: relative;
 
     #map {
       width: 100%;
       height: 100%;
+      position: relative;
 
       .leaflet-bar {
         position: absolute;
@@ -27,11 +28,17 @@
       .leaflet-top {
         bottom: 30px;
       }
+
+      .leaflet-popup-content-wrapper {
+        border-radius: unset;
+        padding: 0;
+      }
     }
 
   }
 
   &-modal {
+    z-index: 1000000;
     &-content {
       width: 100%;
       position: relative;
@@ -50,12 +57,15 @@
         .descr-s {
           font-weight: 500;
           line-height: 20px;
+          margin: 0;
+          margin-top: 4px;
         }
 
         &-worktime {
-          margin-top: 14px;
+          margin-top: 10px;
 
           .time {
+            margin: 0;
             margin-top: 4px;
             color: #0E1626;
             font-size: 14px;
@@ -127,6 +137,7 @@
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  border: none;
 }
 
 .leaflet-popup-tip-container {
@@ -134,9 +145,101 @@
 }
 
 
-.leaflet-tile-pane {
-  filter: grayscale(85%);
+//.leaflet-tile-pane {
+//  //filter: grayscale(85%);
+//  //height: 100%;
+//  //width: 100%;
+//  position: relative;
+//  //pointer-events: none;
+//  //z-index: 1000;
+
+//
+//  &:after {
+//    content: "";
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    position: absolute;
+//    background-color: green;
+//    mix-blend-mode: color;
+//    z-index: 1000;
+//  }
+//
+  //&:after {
+  //  content: "";
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 100%;
+  //  position: absolute;
+  //  background-color: #E3E9EF;
+  //  mix-blend-mode: color;
+  //  z-index: 1000;
+  //}
+
+  //&:before {
+  //  content: "";
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 100%;
+  //  position: absolute;
+  //  background-color: #E3E9EF;
+  //  mix-blend-mode: soft-light;
+  //  z-index: 1000;
+  //}
+//
+//}
+
+//.leaflet-tile-pane {
+//  width: 100%;
+//  height: 100%;
+//  background-color: black;
+//  top: 0;
+//  left: 0;
+//
+//}
+
+
+
+
+.ov {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #E3E9EF;
 }
+
+.ove1 {
+  mix-blend-mode: color;
+}
+
+.ove2 {
+  mix-blend-mode: soft-light;
+}
+
+
+
+.leaflet-tile-pane {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  background-color: #E3E9EF;
+
+}
+
+
+
+
+
 
 
 @media (max-width: 575px) {
