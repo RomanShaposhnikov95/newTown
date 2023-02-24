@@ -8,6 +8,13 @@ let greenIcon = L.icon({
     popupAnchor:  [230, 100]
 });
 
+let blueIcon = L.icon({
+    iconUrl: 'assets/img/icons/ic-map-pin-check.svg',
+    iconSize:     [38, 48],
+    iconAnchor:   [22, 94],
+    popupAnchor:  [230, 100]
+});
+
 
 let map = L.map('map').setView([coord1, coord2], 7);
 
@@ -21,10 +28,21 @@ let map = L.map('map').setView([coord1, coord2], 7);
 // }).addTo(map);
 
 
+// L.tileLayer(
+//     'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png', {
+//         maxZoom: 19,
+//         minZoom: 7,
+//     }).addTo(map);
+
 L.tileLayer(
     'https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}.png', {
-        maxZoom: 19
+        maxZoom: 19,
+        minZoom: 7,
     }).addTo(map);
+
+
+
+
 
 
 
@@ -35,7 +53,7 @@ let marker2 = L.marker([56.1700878, 22.8018172], {icon: greenIcon}).addTo(map);
 
 const modal = `
  <div class="map-modal-content">
-    <img src="assets/img/all/1.png" alt="">
+<!--    <img src="assets/img/slides/1.png" alt="">-->
 
     <div class="map-modal-content-data">
         <h5 class="title-s">RIMI veikalā</h5>
@@ -52,8 +70,19 @@ const modal = `
 
 map.eachLayer(function (layer) {
     layer.bindPopup(modal)
+
+    layer.on('popupopen', function (e) {
+        e.target.setIcon(blueIcon)
+    });
+
+    layer.on('popupclose', function (e) {
+        e.target.setIcon(greenIcon)
+    });
+
 });
 
 
 
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable()
 

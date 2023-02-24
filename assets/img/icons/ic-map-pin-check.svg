@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="48px" viewBox="0 0 38 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>55A7476E-C6D6-4AEE-A24B-836819D6EDA2</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Stores" transform="translate(-767.000000, -666.000000)">
+            <g id="Google-maps" transform="translate(214.000000, 410.000000)">
+                <g id="Pins" transform="translate(216.000000, 139.000000)">
+                    <g id="map-pin" transform="translate(337.000000, 117.000000)">
+                        <path d="M19,48 L5.640625,33.9 C2.078125,30.3 0,24.9 0,19.5 C0,14.4 1.78125,9.6 5.640625,5.7 C9.203125,2.1 13.953125,0 19,0 C24.046875,0 28.796875,2.1 32.359375,5.7 C35.921875,9.6 38,14.4 38,19.5 C38,24.9 35.921875,30.3 32.359375,33.9 L19,48 Z" id="path" fill="#264692"></path>
+                        <circle id="path" fill="#FFFFFF" cx="19" cy="19" r="6"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

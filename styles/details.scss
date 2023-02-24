@@ -120,9 +120,12 @@
     column-gap: 11px;
     row-gap: 11px;
 
-    img {
-      width: calc(33.3333% - 8px);
-    }
+
+      img {
+        width: calc(33.3333% - 8px);
+        transition: all 0.3s;
+        position: relative;
+      }
   }
 }
 

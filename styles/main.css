@@ -96,6 +96,7 @@ ol, ul, li {
 .descr-sm a {
   color: #60B358;
   text-decoration: underline;
+  transition: all 0.4s;
 }
 .descr-sm a:hover {
   color: #264692;
@@ -140,6 +141,7 @@ ol, ul, li {
   display: inline-flex;
   padding-bottom: 9px;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .link:after {
   content: "";
@@ -220,7 +222,7 @@ header {
 header .navbar {
   padding: 25px 0;
   flex-wrap: unset;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 header .navbar .container {
   align-items: flex-start;
@@ -237,8 +239,7 @@ header .navbar-brand {
   justify-content: center;
 }
 header .navbar-brand svg {
-  width: 100%;
-  max-height: 110px;
+  max-width: 100%;
 }
 header .header {
   width: 81.8%;
@@ -258,6 +259,7 @@ header .header-top .lang li a, header .header-top-info li a {
   font-size: 14px;
   letter-spacing: -0.4px;
   line-height: 26px;
+  transition: all 0.4s;
 }
 header .header-top .lang li a:hover, header .header-top-info li a:hover {
   color: #264692;
@@ -285,6 +287,7 @@ header .header-bottom li a {
   font-weight: 500;
   letter-spacing: -0.4px;
   line-height: 26px;
+  transition: all 0.4s;
 }
 header .header-bottom li a:hover {
   color: #264692;
@@ -329,12 +332,9 @@ header .scroll {
     align-items: center;
   }
   header .scroll .navbar-brand {
+    width: 7%;
     max-height: 60px;
     margin-right: 0;
-    transform: scale(0.9);
-  }
-  header .scroll .navbar-brand svg {
-    transform: scale(0.5);
   }
   header .scroll .header {
     width: 90%;
@@ -369,6 +369,10 @@ header .scroll {
     width: 335px;
     height: 100vh;
     z-index: 1000;
+  }
+  header .navbar-brand {
+    margin-right: 0;
+    max-height: 60px;
   }
   header .header {
     flex-direction: column-reverse;
@@ -497,6 +501,7 @@ header .scroll {
   width: 33.3333333%;
   padding: 40px;
   min-height: 188px;
+  transition: all 0.4s;
 }
 .banner .link-group-item span {
   display: flex;
@@ -579,7 +584,7 @@ header .scroll {
 }
 .swiper-wrap .swiper-container .swiper-wrapper .swiper-slide img {
   max-width: 100%;
-  transition: all 0.3s;
+  transition: all 0.4s;
   cursor: url("../assets/img/icons/creative-cursor.svg") 50 50, auto;
 }
 .swiper-wrap .swiper-container .swiper-wrapper .swiper-slide img:hover {
@@ -588,6 +593,7 @@ header .scroll {
 .swiper-wrap .swiper-container .swiper-wrapper .swiper-slide .title-m {
   margin-top: 40px;
   display: block;
+  transition: all 0.4s;
 }
 .swiper-wrap .swiper-container .swiper-wrapper .swiper-slide .title-m:hover {
   color: #131E33;
@@ -637,6 +643,7 @@ header .scroll {
 }
 .about a {
   margin-top: 14px;
+  transition: all 0.4s;
 }
 .about a:hover {
   color: #60B358;
@@ -654,6 +661,9 @@ header .scroll {
   padding: 40px;
   min-height: 396px;
   background-color: #E3E9EF;
+  transition: all 0.4s;
+  top: 0;
+  position: relative;
 }
 .about .info-group-item .title-s {
   margin-top: 30px;
@@ -664,7 +674,6 @@ header .scroll {
 @media (min-width: 770px) {
   .about .info-group-item:hover {
     background-color: #F6F8FB;
-    position: relative;
     top: -20px;
     margin-bottom: -20px;
   }
@@ -691,6 +700,7 @@ header .scroll {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 26px;
+  transition: all 0.9s;
 }
 .more-text .spanwrap {
   width: 100%;
@@ -857,7 +867,7 @@ header .scroll {
   justify-content: center;
   background-color: #FFFFFF;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.4s;
   top: 0;
 }
 .support .support-group-item img {
@@ -941,6 +951,7 @@ header .scroll {
 .footer-top-item ul li {
   margin-top: 18px;
   max-height: 20px;
+  transition: all 0.4s;
 }
 .footer-top-item ul li a {
   opacity: 0.8;
@@ -1159,6 +1170,7 @@ header .scroll {
   line-height: 26px;
   background-color: #60B358;
   border: none;
+  transition: all 0.4s;
 }
 .cookie-content-btns button:hover {
   background-color: #FFFFFF;
@@ -1249,6 +1261,7 @@ header .scroll {
   padding: 9px 16px;
   border: 1px solid #264692;
   background-color: transparent;
+  transition: all 0.4s;
 }
 .cards .tabs-item:hover {
   background-color: rgba(38, 70, 146, 0.1);
@@ -1276,6 +1289,9 @@ header .scroll {
 .cards-content-item-img img {
   max-width: 100%;
 }
+.cards-content-item .title-s {
+  transition: all 0.4s;
+}
 .cards-content-item .title-s:hover {
   text-decoration: underline;
   color: #131E33;
@@ -1296,6 +1312,7 @@ header .scroll {
   margin-top: 20px;
   background-color: transparent;
   border: none;
+  transition: all 0.4s;
 }
 .cards-content-item .link:after {
   content: none;
@@ -1504,6 +1521,8 @@ header .scroll {
 }
 .details-gallery img {
   width: calc(33.3333% - 8px);
+  transition: all 0.3s;
+  position: relative;
 }
 
 @media (max-width: 575px) {
@@ -1552,6 +1571,7 @@ header .scroll {
   border: none;
   border-top: 1px solid #284882;
   text-align: start;
+  transition: all 0.4s;
 }
 .tab .nav button:hover {
   background-color: #334A80;
@@ -1632,6 +1652,7 @@ header .scroll {
   line-height: 22px;
   display: inline-flex;
   align-items: center;
+  transition: all 0.4s;
 }
 .contact-person-item-num svg, .contact-person-item-mail svg {
   margin-right: 10px;

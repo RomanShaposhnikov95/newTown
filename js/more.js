@@ -1,11 +1,11 @@
 (function () {
 
-    var textArea = document.querySelectorAll('[data-js=content]'),
+    const textArea = document.querySelectorAll('[data-js=content]'),
         maxText = 558;
 
     [].forEach.call( textArea, function( el ) {
 
-        var textAreaLength = el.innerHTML.length,
+        let textAreaLength = el.innerHTML.length,
             teaserText = el.innerHTML.substr(0, maxText),
             fullText = el.innerHTML,
             showTeaser = false;
@@ -27,7 +27,6 @@
             var button = document.createElement('button');
             button.innerHTML = 'Show More';
             button.classList.add('link');
-
 
             btnWrap.appendChild(button);
             el.appendChild(btnWrap);

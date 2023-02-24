@@ -1,6 +1,7 @@
 .details-slider {
   width: 100%;
   max-width: 1002px;
+  transition: all 0.4s;
 }
 .details-slider .swiper-container {
   height: 100%;
